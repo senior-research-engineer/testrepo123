@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Share Your Learning — Learning Summaries</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>Share Your Learning</h1>
+      <a class="button" href="index.html">Back to feed</a>
+    </div>
+  </header>
+  <main>
+    <div id="form-message" class="form-message"></div>
+    <form id="entry-form" class="entry-form">
+      <label>
+        Your name
+        <input type="text" name="name" id="name" required maxlength="100" />
+      </label>
+      <label>
+        Title
+        <input type="text" name="title" id="title" required maxlength="150" />
+      </label>
+      <label>
+        Date
+        <input type="date" name="date" id="date" required />
+      </label>
+      <label>
+        Summary
+        <textarea name="summary" id="summary" required maxlength="4000"></textarea>
+      </label>
+      <label>
+        Photos <span class="hint">(up to 5, JPEG/PNG/WebP, 5MB max each — optional)</span>
+        <input type="file" name="photos" id="photos" accept="image/jpeg,image/png,image/webp" multiple />
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <script src="js/submit.js"></script>
+</body>
+</html>
