@@ -7,3 +7,8 @@ This file provides guidance to Claude Code when working with code in this reposi
 - No frameworks or libraries (React, Vue, Angular, jQuery, etc.).
 - No build tooling — no bundlers (Webpack, Vite, esbuild), no transpilers (Babel, TypeScript), no `package.json`-driven build pipeline.
 - Files must run directly in the browser as-is, with no compile step required.
+
+## Working conventions
+- Before implementing any non-trivial feature, ask clarifying
+  questions about scope, edge cases, and constraints first —
+  don't propose a plan until you've asked.
